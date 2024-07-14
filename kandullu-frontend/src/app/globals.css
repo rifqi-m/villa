@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark .ant-pagination-item,
+.dark .ant-pagination-item a {
+  @apply !border-neutral-200 bg-neutral-900 !text-neutral-200;
+}
+
+.dark .ant-pagination-item-active,
+.dark .ant-pagination-item-active a {
+  @apply !border-primary-200 bg-primary-900 !text-neutral-200;
+}
+
+.dark .ant-pagination-prev button,
+.dark .ant-pagination-next button {
+  @apply !text-neutral-200;
+}
+.dark .ant-pagination-prev:hover,
+.dark .ant-pagination-next:hover {
+  @apply bg-neutral-600;
+}
+
+.dark .ant-pagination-item:hover,
+.dark .ant-pagination-item:hover a {
+  @apply !border-neutral-200 bg-neutral-600 !text-neutral-200;
+}
+
+/* styles/ckeditor-custom.css */
+.ck-editor__editable {
+  min-height: 400px; /* Set minimum height */
+  max-height: 600px; /* Set maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid gray;
+  padding: 10px;
+}
+.ck-toolbar__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 8px;
+  background-color: gray;
+}
+
+.nav_loader {
+  border-top-color: #3498db;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
